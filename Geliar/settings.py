@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home'
 ]
 
 MIDDLEWARE = [
@@ -50,11 +51,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Geliar.urls'
-
+TEMPLAITE_DIR = BASE_DIR / 'templates'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLAITE_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
